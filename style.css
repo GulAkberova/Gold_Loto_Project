@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root {
+    --loto: #764A34;
+  }
+
+/* ___________________Header__________________ */
+.loto_header{
+    background-color: var(--loto) ;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loto_header nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loto_header_person{
+    width: 240px;
+}
+.loto_header_person_img{
+    width: 20px;
+    height: 20px;
+}
+.loto_header_price{
+    position: relative;
+    font-weight: 700;
+}
+.loto_header_price::after{
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 18px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AEAEAE;
+}
+.loto_header_price1{
+    position: relative;
+    font-weight: 700;
+}
+.loto_header_price1::after{
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--loto);
+}
+/* __________________Login______________________ */
+.home_page_bigdiv_login{
+    background-image: url('./img/old-wooden-lotto-barrels-game-cards.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show{
+    display: none;
+}
+.home_page_div_login{
+    width: 450px;
+   padding: 10px 15px;
+   background-color: #FFFAEF;
+   border-radius: 5px;
+   color: var(--loto);
+}
+.home_page_div_login input{
+    border: 2px solid var(--loto) !important;
+    border-radius: 3px;
+}
+
+.home_page_bigdiv_login button{
+    background-color: var(--loto);
+    border: 1px solid var(--loto);
+    border-radius: 3px;
+    transition: 0.6s;
+}
+.home_page_bigdiv_login button:hover{
+    background-color: transparent;
+}
+.home_page_bigdiv_login button:hover a{
+   color: #764A34;
+}
+.home_page_bigdiv_login button a{
+    color: white;
+    text-decoration: none;
+}
+.home_page_div_login_check button a{
+    color: white;
+    text-decoration: none;
+
+}
+.home_page_div_login_check a{
+    color: var(--loto);
+    text-decoration: none;
+}
+.home_page_div_login_check button:hover{
+    background-color: transparent;
+}
+.home_page_div_login_check button:hover a{
+   color: var(--loto);
+}
+.home_page_div_login p a{
+    color: var(--loto);
+    text-decoration: none;
+}
+/* ____________________Footer_________________________ */
+.loto_footer{
+    background-color: var(--loto);
+}
+/* ___________________Recovery______________________ */
+.recovery_bigdiv{
+    background-image: url('./img/tabletop-lotto-game-with-wooden-barrels-vintage-cards-play-home-with-friends-3\ 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.recovery_div{
+    width: 360px;
+   padding: 10px 15px;
+   background-color: #FFFAEF;
+   border-radius: 5px;
+   color: var(--loto);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.recovery_div input{
+    border: 1px solid var(--loto);
+}
+.recovery_div button{
+    background-color: var(--loto);
+    border: 1px solid var(--loto);
+    border-radius: 3px;
+    transition: 0.6s;
+}
+.recovery_div button:hover{
+    background-color: transparent;
+}
+.recovery_div button a{
+    color: white;
+    text-decoration: none;
+}
+.recovery_div button:hover a{
+    color: var(--loto);
+}
+.recovery_div1{
+   width: 360px;
+   padding: 80px 0px;
+   background-color: #FFFAEF;
+   border-radius: 5px;
+   color: var(--loto);
+}
+/* __________________________Carousel__________________________ */
+.loto_carusel1{
+    width: 100%;
+    height: 300px;
+}
+.loto_carusel1 img{
+    width: 100%;
+    height: 100%;
+}
+/* _________________________Home_Page______________________ */
+.loto_home_page_bigdiv{
+    background-image: url('./img//wooden-textured-background\ 2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 60px;
+}
+
+.loto_home_div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+.traj_div{
+    width: 46%;
+    background-color: #FFFAEF;
+    border-radius: 4px;
+   padding: 10px 0px;
+}
+.traj_div a{
+    color: black;
+    text-decoration: none;
+}
+.traj_price div{
+    background-color: #FFEFCA;
+}
+.traj_success{
+    border-top: 2px solid var(--loto);
+}
+.traj_success_price ul li{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--loto);
+    font-weight: 700;
+    margin-right: 8px;
+    background-color: #FFEFCA;
+
+}
+.traj_end_price{
+    background-color: #FFEFCA;
+    font-weight: 700;
+}
+.traj_time button{
+    background-color: #FFEFCA;
+}
+/* _______________________Account____________________________ */
+.person_account_bigdiv{
+    background-image: url('./img/tabletop-lotto-game-with-wooden-barrels-vintage-cards-play-home-with-friends-2\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.person_account_switch{
+    width: max-content;
+}
+/* __________Refferal_______ */
+.refferal_big_div{
+    background-color: #FFFAEF;
+}
+
+.refferal_big_div_form1,
+.refferal_big_div_form2{
+    width: 42%;
+}
+.refferal_big_div_form1 input,
+.refferal_big_div_form2 input{
+    border: 1px solid var(--loto);
+}
+.refferal_big_div_button button{
+    background-color: var(--loto);
+    border: 1px solid var(--loto);
+    transition: 0.6s;
+}
+.refferal_big_div_button button a{
+    color: white;
+    text-decoration: none;
+}
+.refferal_big_div_button button:hover{
+    background-color: transparent;
+}
+.refferal_big_div_button button:hover a{
+    color: var(--loto);
+}
+/* __________person_account_menu___________ */
+.person_account_menu button{
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid var(--loto);
+    background-color: var(--loto);
+}
+.person_account_menu button a{
+    color: white;
+    text-decoration: none;
+}
+.person_account_choose button{
+    width: 100px;
+    max-width: 100%;
+    border: 1px solid var(--loto);
+    background-color: var(--loto);
+
+}
+.person_account_choose button a{
+   color: white;
+   text-decoration: none;
+
+}
+
+.person_account_choose input{
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid var(--loto);
+
+}
+.person_account_price button{
+    border: 1px solid var(--loto);
+    border-radius: 20px;
+}
+.person_account_price button a{
+   color: var(--loto);
+   text-decoration: none;
+}
+/* .person_account_price button::after{
+    content: "+";
+    clip-path: circle(56.8% at 86% 55%);
+    background-color: #764A34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+} */
+/* ______________Balans___________ */
+.balans_home_page_bigdiv{
+    background-image: url('./img/wooden-barrels-with-numbers-percentages-black-background\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.balans_home_page_buttons{
+    width: 50%;
+}
+.balans_home_page_buttons button{
+    width: 45%;
+    max-width: 100%;
+    padding: 10px 0px;
+    background-color: var(--loto);
+    border: 1px solid var(--loto);
+  }
+.balans_home_page_buttons button a{
+    color: white;
+    text-decoration: none;
+}
+.balans_div{
+    width: 50%;
+    background-color: #FFFAEF;
+}
+.balans_price{
+    flex-direction: column;
+    width: 50%;
+}
+.balans_price div {
+    background-color: #FFFAEF;
+
+}
+.balans_write button{
+    border:1px solid  var(--loto);
+    background-color: var(--loto);
+
+}
+.balans_write button a{
+    color: white;
+    text-decoration: none;
+}
+/* _________________________Buyer_____________________________ */
+.buyer_bigdiv{
+    background-color: #FFFAEF;
+}
+.buyer_avto{
+    border: 1px solid var(--loto);
+    background-color: var(--loto);
+    color: white;
+}
+.buyer_btns button,
+.buyer_btns span{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--loto);
+    border-radius: 3px;
+    background-color: white;
+    margin: 0px 7px;
+    font-weight: 700;
+
+}
+.buyer_btn span{
+    border: 1px solid var(--loto);
+}
+.buyer_btn button{
+    border: 1px solid var(--loto);
+    background-color: var(--loto);
+}
+.buyer_btn button a{
+    color: white;
+    text-decoration: none;
+}
+.buyer_header{
+    background-color: #FFFAEF;
+}
+.buyer_header button{
+    border: 1px solid var(--loto);
+    width: 110px;
+    background-color: var(--loto);
+    color: white;
+   
+}
+.buyer_ticket{
+    border: 2px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    /* max-width: 100%; */
+    
+
+}
+.buyer_ticket1{
+    border: 6px solid black;
+    width: 1000px;
+}
+.buyer_ticket button{
+ padding: 30px 45px;
+}
+
+/* __________________Footer_app______________ */
+.footer_app{
+    width: 100%;
+    background-color: #F4F4F4;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer_app a{
+    text-decoration: none;
+    color: #764A34;
+}
+
+/* ________________MediaQuery___________________________ */
+
+@media only screen and (max-width: 600px){
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px){
+    .home_page_bigdiv_login,
+    .person_account_bigdiv,
+    .recovery_bigdiv,
+.loto_home_page_bigdiv
+    {
+       background-image: url('./img/Rectangle\ 19.png');
+       
+    }
+   
+    .show{
+        display: block;
+    }
+    .noShow{
+        display: none;
+    }
+    .loto_header img{
+        margin: 19px auto;
+    }
+    .loto_home_page_bigdiv{
+        padding: 10px 5px;
+    }
+    .traj_end_price img{
+        width: 10px;
+        height: 10px;
+    }
+    .traj_success_price ul li{
+        width: 30px;
+        height: 30px;
+    }
+    .traj_price h6{
+        font-size: 12px;
+    }
+    .person_account_choose{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .refferal_big_div_forms{
+        flex-direction: column;
+    }
+    .refferal_big_div_form1,
+    .refferal_big_div_form2{
+        width: 100%;
+    }
+    .balans_home_page_buttons {
+        width: 100%;
+    }
+    .balans_app{
+        flex-direction: column;
+    }
+    .balans_div{
+        width: 100%;
+    }
+    .balans_price{
+       flex-direction: row;
+       justify-content: space-between;
+       width: 100%;
+    }
+    .balans_price div{
+      margin: 15px 0px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1100px){
+.traj_div{
+    width: 100%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+
+}
