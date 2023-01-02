@@ -24,31 +24,41 @@
     align-items: center;
 }
 .loto_header_person{
-    width: 240px;
+  border-radius: 3px;
 }
-.loto_header_person_img{
+.loto_header_person a{
+    color: black;
+    text-decoration: none;
+}
+/* .loto_header_person_img{
     width: 20px;
     height: 20px;
-}
+} */
 .loto_header_price{
     position: relative;
     font-weight: 700;
+    border-radius: 3px;
 }
 .loto_header_price::after{
     content: '+';
     position: absolute;
     right: 0;
     top: 0;
-    width: 18px;
+    width: 38px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #AEAEAE;
+    background-color: #cccccc;
 }
 .loto_header_price1{
     position: relative;
     font-weight: 700;
+    border-radius: 4px;
+}
+.loto_header_price1 a{
+    color: black;
+    text-decoration: none;
 }
 .loto_header_price1::after{
     content: '+';
@@ -61,25 +71,31 @@
     justify-content: center;
     align-items: center;
     background-color: var(--loto);
+    color: white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 /* __________________Login______________________ */
 .home_page_bigdiv_login{
+    height: calc(100vh - 100px);
+    /* height: 1000px; */
     background-image: url('./img/old-wooden-lotto-barrels-game-cards.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 .show{
     display: none;
 }
 .home_page_div_login{
-    width: 450px;
-   padding: 10px 15px;
+    width: 400px;
+    height: 400px;
+   padding: 16px 15px;
    background-color: #FFFAEF;
-   border-radius: 5px;
+   border-radius: 10px;
    color: var(--loto);
 }
 .home_page_div_login input{
@@ -122,12 +138,63 @@
     color: var(--loto);
     text-decoration: none;
 }
+/* ____________________REgister________________ */
+.home_page_bigdiv_register{
+    /* height: calc(100vh - 100px); */
+    /* height: 1000px; */
+    background-image: url('./img/old-wooden-lotto-barrels-game-cards.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.home_page_div_register{
+    width: 400px;
+    /* height: 400px; */
+   padding: 16px 15px;
+   background-color: #FFFAEF;
+   border-radius: 10px;
+   color: var(--loto);
+}
+.home_page_div_register input{
+    border: 2px solid var(--loto) !important;
+    border-radius: 3px;
+}
+
+.home_page_bigdiv_register button{
+    background-color: var(--loto);
+    border: 1px solid var(--loto);
+    border-radius: 3px;
+    transition: 0.6s;
+}
+.home_page_bigdiv_register button:hover{
+    background-color: transparent;
+}
+.home_page_bigdiv_register button:hover a{
+   color: #764A34;
+}
+.home_page_bigdiv_register button a{
+    color: white;
+    text-decoration: none;
+}
+.register_back{
+    width: 400px;
+}
+.register_back a{
+    color: white;
+    text-decoration: none;
+}
 /* ____________________Footer_________________________ */
 .loto_footer{
     background-color: var(--loto);
 }
 /* ___________________Recovery______________________ */
 .recovery_bigdiv{
+    height: calc(100vh - 110px);
     background-image: url('./img/tabletop-lotto-game-with-wooden-barrels-vintage-cards-play-home-with-friends-3\ 1.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -135,6 +202,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 60px;
 }
 .recovery_div{
@@ -188,7 +256,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 10px 60px;
+    padding: 0px 60px;
 }
 
 .loto_home_div{
@@ -196,12 +264,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 25px;
+    padding: 20px 0px;
 
 }
 .traj_div{
     width: 46%;
     background-color: #FFFAEF;
-    border-radius: 4px;
+    border-radius: 10px;
    padding: 10px 0px;
 }
 .traj_div a{
@@ -231,6 +300,11 @@
     background-color: #FFEFCA;
     font-weight: 700;
 }
+.traj_time{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .traj_time button{
     background-color: #FFEFCA;
 }
@@ -240,13 +314,17 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0px 90px !important;
 }
 .person_account_switch{
     width: max-content;
+    border-radius: 4px;
 }
 /* __________Refferal_______ */
 .refferal_big_div{
     background-color: #FFFAEF;
+    border-radius: 15px;
+    padding: 0px 30px;
 }
 
 .refferal_big_div_form1,
@@ -256,6 +334,7 @@
 .refferal_big_div_form1 input,
 .refferal_big_div_form2 input{
     border: 1px solid var(--loto);
+    padding: 9px 8px;
 }
 .refferal_big_div_button button{
     background-color: var(--loto);
@@ -278,14 +357,20 @@
     max-width: 100%;
     border: 1px solid var(--loto);
     background-color: var(--loto);
+    
 }
 .person_account_menu button a{
     color: white;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
 }
 .person_account_choose button{
-    width: 100px;
-    max-width: 100%;
+    /* width: 100px;
+    max-width: 100%; */
+    /* padding: 10px; */
+    width: 80px;
     border: 1px solid var(--loto);
     background-color: var(--loto);
 
@@ -297,17 +382,37 @@
 }
 
 .person_account_choose input{
+    /* width: 300px;
+    max-width: 100%; */
     width: 300px;
-    max-width: 100%;
     border: 1px solid var(--loto);
 
 }
 .person_account_price button{
     border: 1px solid var(--loto);
     border-radius: 20px;
+    background-color: #FFFAEF;
+    position: relative;
+}
+.person_account_price button::after{
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background-color: var(--loto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    font-size: 19px;
+
 }
 .person_account_price button a{
-   color: var(--loto);
+   color:black;
    text-decoration: none;
 }
 /* .person_account_price button::after{
@@ -325,6 +430,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0px 40px;
 
 }
 .balans_home_page_buttons{
@@ -344,18 +450,23 @@
 .balans_div{
     width: 50%;
     background-color: #FFFAEF;
+        border-radius: 10px;
+
 }
 .balans_price{
     flex-direction: column;
-    width: 50%;
+    width: 40%;
+    /* border: 2px solid white; */
 }
 .balans_price div {
     background-color: #FFFAEF;
+    width: 48%;
 
 }
 .balans_write button{
-    border:1px solid  var(--loto);
+    border:1px solid  white;
     background-color: var(--loto);
+    border-radius: 3px;
 
 }
 .balans_write button a{
@@ -365,6 +476,7 @@
 /* _________________________Buyer_____________________________ */
 .buyer_bigdiv{
     background-color: #FFFAEF;
+    padding: 0px 40px;
 }
 .buyer_avto{
     border: 1px solid var(--loto);
@@ -389,8 +501,17 @@
     border: 1px solid var(--loto);
 }
 .buyer_btn button{
+    width: 90px;
     border: 1px solid var(--loto);
     background-color: var(--loto);
+    border-radius: 5px;
+}
+.buyer_btn span{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
 .buyer_btn button a{
     color: white;
@@ -398,13 +519,14 @@
 }
 .buyer_header{
     background-color: #FFFAEF;
+    width: 75%;
+
 }
 .buyer_header button{
     border: 1px solid var(--loto);
     width: 110px;
     background-color: var(--loto);
     color: white;
-   
 }
 .buyer_ticket{
     border: 2px solid white;
@@ -435,11 +557,121 @@
     text-decoration: none;
     color: #764A34;
 }
+/* __________________Loto_Modal________________________ */
+.modal{
+    background-color:rgba(0, 0, 0, 0.837) ;
+}
+.modal-header,
+.modal-body{
+    background-color: #FFFAEF;
+}
+.modal-header button{
+    background-color: #FFEFCA;
+}
+.modal-body h3 a{
+    color: black;
+    text-decoration: none;
+}
+.loto_modal{
+    background-color: #FFEFCA;
+}
+body{
+  position: relative;
+}
+/* ____________________Game________________________ */
+.game_div span{
+    width: 70px;
+    height: 70px;
+    border: 7px solid var(--loto);
+    background-color: #FFFAEF;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 10px;
+}
+.game_div span:nth-child(1){
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+}
+.game_info{
+    background-color: var(--loto);
+}
+/* ________________Win______________ */
+.win_img_div{
+    height: 300px;
+}
+.win_img_div img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.win_main_div{
+    background-color: #FFFAEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+.win_main_text{
+     height:500px;
+    background-image: url('./img/Group.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.win_main_text h1{
+    font-weight: 700;
+
+}
+/* ________________Operations_app_______ */
+.operations_app{
+    background-color: #FFFAEF;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.operations_div{
+    border-bottom: 1px solid var(--loto);
+    /* padding: 0px 20px; */
+    border-radius: 20px;
+}
+.operations_div p{
+    font-weight: 700;
+}
+/* _____________Banner_____________ */
+
+.carousel-indicators{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.carousel-indicators button{
+    width: 20px !important;
+    height: 20px !important;
+    background-color: rgba(193, 188, 188, 0.86) !important;
+    border-radius: 100% !important;
+}
+.carousel_number{
+    padding: 90px 0px 30px 0px;
+}
 /* ________________MediaQuery___________________________ */
 
-@media only screen and (max-width: 600px){
-
+@media only screen and (max-width: 450px){
+    .person_account_choose input{
+        width: 200px;
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -447,10 +679,20 @@
     .home_page_bigdiv_login,
     .person_account_bigdiv,
     .recovery_bigdiv,
-.loto_home_page_bigdiv
+.loto_home_page_bigdiv,
+.home_page_bigdiv_register,
+.balans_home_page_bigdiv
     {
        background-image: url('./img/Rectangle\ 19.png');
        
+    }
+    .balans_home_page_buttons  button{
+        border: 1px solid white;
+        border-radius: 3px;
+        background-color: #FFFAEF;
+    }
+    .balans_home_page_buttons button a{
+        color: black;
     }
    
     .show{
@@ -476,9 +718,23 @@
     .traj_price h6{
         font-size: 12px;
     }
+    .btn_app{
+        width: 630px !important;
+    }
+    .person_account_bigdiv{
+        padding: 30px 20px !important;
+    }
+ 
     .person_account_choose{
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+   
+    .refferal_big_div{
+        padding: 0px 10px;
     }
     .refferal_big_div_forms{
         flex-direction: column;
@@ -486,6 +742,9 @@
     .refferal_big_div_form1,
     .refferal_big_div_form2{
         width: 100%;
+    }
+    .balans_home_page_bigdiv{
+        padding: 0px 10px;
     }
     .balans_home_page_buttons {
         width: 100%;
@@ -500,15 +759,71 @@
        flex-direction: row;
        justify-content: space-between;
        width: 100%;
+       padding: 20px 0px;
     }
     .balans_price div{
       margin: 15px 0px;
+      border-radius: 5px;
     }
-
+    .buyer_header_app h4{
+        font-size: 17px;
+    }
+    .buyer_header_app h6{
+        font-size: 14px;
+    }
+    .buyer_header{
+        width: 100%;
+    }
+    .game_div span{
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        margin: 10px 4px;
+    }
+    .game_div span:nth-child(1){
+        width: 80px;
+        height: 80px;
+        font-size: 35px;
+    }
+  .win_app{
+    width:150px;
+    height:150px;
+    border-radius: 100%;
+    background-color: #E5BB2A;
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+  }
+   
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
+    .buyer_bigdiv{
+        padding: 0px 10px;
+    }
+    .buyer_btns h4,
+    .buyer_btn h4
+    {
+        font-size: 13px;
+    }
+   
+    .buyer_btns button,
+.buyer_btns span{
+    width: 25px;
+    height: 25px;
+    margin: 0px 3px;
+
+}
+.buyer_btn button{
+    width: 60px;
+}
+.buyer_btn span{
+    width: 40px;
+}
+.loto_home_page_bigdiv{
+    padding: 0px 20px;
+}
 
 }
 
