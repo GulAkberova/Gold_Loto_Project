@@ -256,7 +256,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0px 60px;
+    padding: 0px 60px 350px 60px;
 }
 
 .loto_home_div{
@@ -314,7 +314,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0px 90px !important;
+    padding: 0px 90px 100px 90px;
 }
 .person_account_switch{
     width: max-content;
@@ -430,7 +430,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0px 40px;
+    padding: 0px 40px 100px 40px;
 
 }
 .balans_home_page_buttons{
@@ -524,9 +524,11 @@
 }
 .buyer_header button{
     border: 1px solid var(--loto);
-    width: 110px;
+    width: 15%;
+    padding: 10px 0px;
     background-color: var(--loto);
     color: white;
+    border-radius: 5px;
 }
 .buyer_ticket{
     border: 2px solid white;
@@ -664,6 +666,41 @@ body{
 }
 .carousel_number{
     padding: 90px 0px 30px 0px;
+     font-weight: 700;
+}
+/* ________________Lost_________________ */
+.goBack{
+  padding: 0px 0px 140px 0px;
+  display: flex;
+  justify-content: center;
+}
+.goBack button{
+    border: 1px solid var(--loto);
+    background-color: var(--loto);
+    border-radius: 5px;
+
+}
+.goBack button a{
+    color: white;
+    text-decoration: none;
+}
+.lost_main_div{
+    border: 1px solid rgba(0, 0, 0, 0.166);
+    display: flex;
+    flex-direction: column; 
+    border-radius: 5px;
+}
+.lost_padding{
+    padding: 0px 60px 0px 60px;
+}
+.loto_ticket{
+    border: 1px solid black;
+    width: 100%;
+    height: 200px;
+}
+.carousel,
+.goBack{
+    background-color: #FFFAEF;
 }
 /* ________________MediaQuery___________________________ */
 
@@ -675,7 +712,7 @@ body{
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 620px){
     .home_page_bigdiv_login,
     .person_account_bigdiv,
     .recovery_bigdiv,
@@ -722,7 +759,8 @@ body{
         width: 630px !important;
     }
     .person_account_bigdiv{
-        padding: 30px 20px !important;
+        padding: 0px 20px 100px 20px;
+
     }
  
     .person_account_choose{
@@ -744,7 +782,8 @@ body{
         width: 100%;
     }
     .balans_home_page_bigdiv{
-        padding: 0px 10px;
+        padding: 0px 12px 100px 12px;
+
     }
     .balans_home_page_buttons {
         width: 100%;
@@ -774,6 +813,7 @@ body{
     .buyer_header{
         width: 100%;
     }
+   
     .game_div span{
         width: 60px;
         height: 60px;
@@ -794,6 +834,20 @@ body{
     justify-content: center;
     padding: 22px;
   }
+  .lost_padding{
+    padding: 0px 20px 0px 20px;
+}
+.buyer_play_bigdiv{
+    height: 150px !important;
+}
+.buyer_play_div1{
+    height: 46px !important;
+}
+.buyer_play_div1 ul li{
+    height: 46px !important;
+    font-size: 20px !important;
+    border-radius: 4px !important;
+}
    
 }
 
@@ -806,6 +860,10 @@ body{
     .buyer_btn h4
     {
         font-size: 13px;
+    }
+    .buyer_header button{
+        width: 25%;
+        /* padding: 10px 0px; */
     }
    
     .buyer_btns button,
@@ -822,8 +880,13 @@ body{
     width: 40px;
 }
 .loto_home_page_bigdiv{
-    padding: 0px 20px;
+    padding: 0px 20px 350px 20px;
+
 }
+ /* .loto_home_page_bigdiv{
+        padding: 10px 5px;
+    } */
+
 
 }
 
@@ -836,5 +899,39 @@ body{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px){
+
+}
+
+.buyer_play_bigdiv{
+    width: 100%;
+    height: 270px;
+    border: 2px solid white;
+    /* margin-top: 20px; */
+    background-color: white;
+    border: 6px solid #513425;
+    border-radius: 10px;
+
+
+}
+.buyer_play_div1{
+    width: 100%;
+    height: 86px;
+    /* border: 2px solid black; */
+}
+.buyer_play_div1 ul{
+    display: flex;
+    padding: 0px;
+
+}
+.buyer_play_div1 ul li{
+    width: 14%;
+    height: 86px;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 37px;
 
 }
