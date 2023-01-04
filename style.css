@@ -12,7 +12,7 @@
 /* ___________________Header__________________ */
 .loto_header{
     background-color: var(--loto) ;
-    padding: 10px 30px;
+    padding: 10px 100px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -256,7 +256,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0px 60px 350px 60px;
+    padding: 0px 100px 350px 100px;
 }
 
 .loto_home_div{
@@ -264,7 +264,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 25px;
-    padding: 20px 0px;
+    padding: 20px 50px;
 
 }
 .traj_div{
@@ -273,6 +273,7 @@
     border-radius: 10px;
    padding: 10px 0px;
 }
+
 .traj_div a{
     color: black;
     text-decoration: none;
@@ -280,8 +281,12 @@
 .traj_price div{
     background-color: #FFEFCA;
 }
+.traj_info{
+    padding: 0px 20px;
+}
 .traj_success{
     border-top: 2px solid var(--loto);
+    padding: 0px 20px;
 }
 .traj_success_price ul li{
     width: 50px;
@@ -476,7 +481,7 @@
 /* _________________________Buyer_____________________________ */
 .buyer_bigdiv{
     background-color: #FFFAEF;
-    padding: 0px 40px;
+    padding: 0px 100px;
 }
 .buyer_avto{
     border: 1px solid var(--loto);
@@ -520,6 +525,11 @@
 .buyer_header{
     background-color: #FFFAEF;
     width: 75%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 6px solid #513425;
+    border-bottom: none;
+
 
 }
 .buyer_header button{
@@ -654,9 +664,8 @@ body{
 /* _____________Banner_____________ */
 
 .carousel-indicators{
-    position: absolute;
-    top: 0;
-    right: 0;
+    top: 0 !important;
+   
 }
 .carousel-indicators button{
     width: 20px !important;
@@ -691,7 +700,7 @@ body{
     border-radius: 5px;
 }
 .lost_padding{
-    padding: 0px 60px 0px 60px;
+    padding: 0px 100px 0px 100px;
 }
 .loto_ticket{
     border: 1px solid black;
@@ -707,6 +716,10 @@ body{
 @media only screen and (max-width: 450px){
     .person_account_choose input{
         width: 200px;
+    }
+    .traj_info,
+    .traj_success{
+        padding: 0px 5px;
     }
     
 }
@@ -737,6 +750,9 @@ body{
     }
     .noShow{
         display: none;
+    }
+    .loto_home_div{
+        padding: 20px 1px;
     }
     .loto_header img{
         margin: 19px auto;
@@ -843,11 +859,19 @@ body{
 .buyer_play_div1{
     height: 46px !important;
 }
-.buyer_play_div1 ul li{
+/* .buyer_play_div1 ul li{
     height: 46px !important;
     font-size: 20px !important;
     border-radius: 4px !important;
+   
+} */
+.buyer_play_div1 .ul .li{
+    height: 46px !important;
+    font-size: 20px !important;
+    border-radius: 4px !important;
+   
 }
+
    
 }
 
@@ -875,9 +899,12 @@ body{
 }
 .buyer_btn button{
     width: 60px;
+    border-radius: 20px;
 }
 .buyer_btn span{
-    width: 40px;
+    width: 60px;
+    border-radius: 20px;
+
 }
 .loto_home_page_bigdiv{
     padding: 0px 20px 350px 20px;
@@ -909,6 +936,7 @@ body{
     /* margin-top: 20px; */
     background-color: white;
     border: 6px solid #513425;
+    /* border-top: none; */
     border-radius: 10px;
 
 
@@ -918,7 +946,7 @@ body{
     height: 86px;
     /* border: 2px solid black; */
 }
-.buyer_play_div1 ul{
+/* .buyer_play_div1 ul{
     display: flex;
     padding: 0px;
 
@@ -933,5 +961,59 @@ body{
     align-items: center;
     font-weight: 700;
     font-size: 37px;
+    position: relative;
+} */
+/* .success{
+    position: relative;
+} */
+.success::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 80%;
+    border-radius: 100%;
+    background-color: #B47B51;
 
+}
+.discuss::before{
+    content: '\f00d';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+   position: absolute;
+   top: 50%;
+   left: 50%;    
+   transform: translate(-50%,-50%);
+   color: red;
+}
+.buyer_app_balans button{
+    background-color: #FFFAEF;
+    border-radius: 15px;
+    border: 1px solid #FFFAEF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.buyer_play_div1 .ul{
+    display: flex;
+    padding: 0px;
+
+}
+.buyer_play_div1 .ul .li{
+    width: 14%;
+    height: 86px;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 37px;
+    position: relative;
+    background-color: #FFFAEF;
+}
+.buyer_play_div1 .ul .li:disabled{
+    background-color: rgb(221, 220, 220);
 }
