@@ -12,17 +12,30 @@
 /* ___________________Header__________________ */
 .loto_header{
     background-color: var(--loto) ;
-    padding: 10px 100px !important;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+.logo_image{
+    height: 70px;
+    width: 300px;
+}
+.logo_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .loto_header nav{
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.loto_header nav{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    border: 2px solid black;
+} */
 .loto_header_person{
   border-radius: 3px;
 }
@@ -85,6 +98,7 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    /* padding: 0px 200px; */
     /* align-items: center; */
 }
 .show{
@@ -264,7 +278,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 25px;
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
 
 }
 .traj_div{
@@ -459,13 +473,17 @@
 
 }
 .balans_price{
+    display: flex;
     flex-direction: column;
-    width: 40%;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+    /* flex-direction: column; */
+    width: 50%;
     /* border: 2px solid white; */
 }
 .balans_price div {
     background-color: #FFFAEF;
-    width: 48%;
+    width: 55%;
 
 }
 .balans_write button{
@@ -524,21 +542,26 @@
 }
 .buyer_header{
     background-color: #FFFAEF;
-    width: 75%;
+    width: 65%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 6px solid #513425;
+    /* border: 6px solid #513425; */
     border-bottom: none;
 
 
 }
 .buyer_header button{
     border: 1px solid var(--loto);
-    width: 15%;
+    width: 25%;
     padding: 10px 0px;
     background-color: var(--loto);
     color: white;
     border-radius: 5px;
+}
+.buyer_header button img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
 }
 .buyer_ticket{
     border: 2px solid white;
@@ -560,7 +583,7 @@
 .footer_app{
     width: 100%;
     background-color: #F4F4F4;
-    height: 90px;
+    height: 80px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -653,6 +676,12 @@ body{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+.operations_app_h6 h6{
+    border-bottom: 1px solid var(--loto);
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-weight: 700;
+}
 .operations_div{
     border-bottom: 1px solid var(--loto);
     /* padding: 0px 20px; */
@@ -665,14 +694,17 @@ body{
 
 .carousel-indicators{
     top: 0 !important;
+    /* position: relative; */
    
 }
 .carousel-indicators button{
     width: 20px !important;
     height: 20px !important;
     background-color: rgba(193, 188, 188, 0.86) !important;
-    border-radius: 100% !important;
+    border-radius: 100% !important;  
 }
+
+
 .carousel_number{
     padding: 90px 0px 30px 0px;
      font-weight: 700;
@@ -713,7 +745,7 @@ body{
 }
 /* ________________MediaQuery___________________________ */
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 415px){
     .person_account_choose input{
         width: 200px;
     }
@@ -721,6 +753,25 @@ body{
     .traj_success{
         padding: 0px 5px;
     }
+    .home_page_div_register{
+        width: 340px;
+    }
+    .register_back a{
+        padding-left: 30px;
+    }
+    .loto_header_price span{
+        font-size: 12px;
+    }
+    .loto_header_person span{
+        font-size: 12px;
+    }
+    .person_account_price button{
+        font-size: 10px;
+    }
+    .traj_time button {
+        font-size: 12px;
+    }
+  
     
 }
 
@@ -736,6 +787,7 @@ body{
        background-image: url('./img/Rectangle\ 19.png');
        
     }
+ 
     .balans_home_page_buttons  button{
         border: 1px solid white;
         border-radius: 3px;
@@ -754,9 +806,15 @@ body{
     .loto_home_div{
         padding: 20px 1px;
     }
-    .loto_header img{
-        margin: 19px auto;
-    }
+     .loto_header{
+        padding: 0px 9px !important;
+     }
+     .loto_header_person{
+        border-radius: 20px;
+     }
+     .logo_image{
+        width: 160px;
+     }
     .loto_home_page_bigdiv{
         padding: 10px 5px;
     }
@@ -810,7 +868,7 @@ body{
     .balans_div{
         width: 100%;
     }
-    .balans_price{
+    /* .balans_price{
        flex-direction: row;
        justify-content: space-between;
        width: 100%;
@@ -819,7 +877,7 @@ body{
     .balans_price div{
       margin: 15px 0px;
       border-radius: 5px;
-    }
+    } */
     .buyer_header_app h4{
         font-size: 17px;
     }
@@ -827,8 +885,20 @@ body{
         font-size: 14px;
     }
     .buyer_header{
-        width: 100%;
+        width: 70%;
+        /* border: 1px solid black; */
     }
+    .buyer_header button{
+        width: 10%;
+        padding: 3px 0px;
+        font-size: 10px;
+        border-radius: 30px;
+    }
+    .buyer_header button img{
+    width: 14px;
+    height: 14px;
+    }
+    
    
     .game_div span{
         width: 60px;
@@ -854,10 +924,13 @@ body{
     padding: 0px 20px 0px 20px;
 }
 .buyer_play_bigdiv{
-    height: 150px !important;
+    height: 108px !important;
+    border: 3px solid #513425 !important;
 }
 .buyer_play_div1{
-    height: 46px !important;
+    height: 34px !important;
+    /* border: 3px solid #513425 !important; */
+
 }
 /* .buyer_play_div1 ul li{
     height: 46px !important;
@@ -866,10 +939,13 @@ body{
    
 } */
 .buyer_play_div1 .ul .li{
-    height: 46px !important;
-    font-size: 20px !important;
-    border-radius: 4px !important;
+    height: 34px !important;
+    font-size: 16px !important;
+    border-radius: 3px !important;
    
+}
+.buyer_avto{
+    border-radius: 20px;
 }
 
    
@@ -1016,4 +1092,44 @@ body{
 }
 .buyer_play_div1 .ul .li:disabled{
     background-color: rgb(221, 220, 220);
+}
+.loto_ticket_div{
+    background-color: #FFFAEF;
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-bottom: 60px;
+}
+.footer_buyer_app{
+    width: 100%;
+    background-color: var(--loto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid white;
+}
+.footer_buyer_ticket{
+    width: 60%;
+    border-radius: 10px;
+    background-color: var(--loto);
+    color: white;
+    border: 1px solid white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.footer_buyer_count button{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+   background-color: var(--loto);
+   border: 1px solid white;
+   color: white;
+   font-size: 30px;
+   text-align: center;  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px 5px;
 }
