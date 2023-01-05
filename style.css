@@ -412,6 +412,7 @@
     border-radius: 20px;
     background-color: #FFFAEF;
     position: relative;
+    font-size: 11px;
 }
 .person_account_price button::after{
     content: '+';
@@ -676,15 +677,27 @@ body{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+.operations_app_h6{
+    background-color: var(--loto);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.operations_app_h6 button{
+    border: 1px solid white;
+    padding: 13px 0px;
+    background-color: var(--loto);
+    color: white;
+  
+}
 .operations_app_h6 h6{
-    border-bottom: 1px solid var(--loto);
     border-radius: 10px;
     padding: 4px 10px;
     font-weight: 700;
+    color: white;
 }
 .operations_div{
     border-bottom: 1px solid var(--loto);
-    /* padding: 0px 20px; */
     border-radius: 20px;
 }
 .operations_div p{
@@ -693,8 +706,7 @@ body{
 /* _____________Banner_____________ */
 
 .carousel-indicators{
-    top: 0 !important;
-    /* position: relative; */
+   bottom: -80px !important;
    
 }
 .carousel-indicators button{
@@ -733,6 +745,7 @@ body{
 }
 .lost_padding{
     padding: 0px 100px 0px 100px;
+    background-color: #FFFAEF;
 }
 .loto_ticket{
     border: 1px solid black;
@@ -784,8 +797,11 @@ body{
 .home_page_bigdiv_register,
 .balans_home_page_bigdiv
     {
-       background-image: url('./img/Rectangle\ 19.png');
+       /* background-image: url('./img/Rectangle\ 19.png'); */
        
+    }
+    .loto_carusel1{
+        height: 150px;
     }
  
     .balans_home_page_buttons  button{
@@ -946,6 +962,9 @@ body{
 }
 .buyer_avto{
     border-radius: 20px;
+}
+.home_page_div_login{
+    width: 350px;
 }
 
    
@@ -1132,4 +1151,10 @@ body{
    justify-content: center;
    align-items: center;
    margin: 0px 5px;
+}
+.op_none{
+    display: none;
+}
+.op_block{
+    display: block;
 }

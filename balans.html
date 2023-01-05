@@ -79,11 +79,18 @@
 
           </div>
           <div class="show">
-            <div class="operations_app px-2 pt-3 pb-5 mt-5">
-              <div class="d-flex justify-content-evenly py-2 operations_app_h6">
-                <h6>Elave olundu</h6>
-                <h6>Cixarildi</h6>
+            <div class="operations_app pb-5 mt-5">
+              <div class="d-flex justify-content-evenly operations_app_h6 w-100">
+                <button class="w-50 text-center" style="border-top-left-radius: 10px;" id="plus">
+                Elave olundu
+                  
+                </button>
+           <button class="w-50 text-center h-100" style="border-top-right-radius: 10px;" id="minus">
+                Cixarildi
+              </button>
               </div>
+             <div class="operations_bigdiv px-2">
+             <div class="operations_div1" id="plus_div">
               <div class="operations_div d-flex justify-content-between align-items-start py-3">
                 <div class="d-flex">
                  <img style="width: 40px; height: 40px;" src="./img/Vector (11).png"/>
@@ -93,17 +100,6 @@
                  </div>
                 </div>
                  <p class="text-success">+0.00</p>
- 
-               </div>
-              <div class="operations_div d-flex justify-content-between align-items-start py-3">
-                <div class="d-flex">
-                 <img style="width: 40px; height: 40px;" src="./img/Vector (11).png"/>
-                 <div class="ps-2">
-                   <h6>Balansınızdan 50 azn çıxıldı</h6>
-                   <span>2022-06-26  12:45:05</span>
-                 </div>
-                </div>
-                 <p class="text-danger">-0.00</p>
  
                </div>
                <div class="operations_div d-flex justify-content-between align-items-start py-3">
@@ -121,6 +117,30 @@
                 <div class="d-flex">
                  <img style="width: 40px; height: 40px;" src="./img/Vector (11).png"/>
                  <div class="ps-2">
+                   <h6>Balansınıza 50 azn əlavə olundu</h6>
+                   <span>2022-06-26  12:45:05</span>
+                 </div>
+                </div>
+                 <p class="text-success">+0.00</p>
+ 
+               </div>
+               <div class="operations_div d-flex justify-content-between align-items-start py-3">
+                <div class="d-flex">
+                 <img style="width: 40px; height: 40px;" src="./img/Vector (11).png"/>
+                 <div class="ps-2">
+                   <h6>Balansınıza 50 azn əlavə olundu</h6>
+                   <span>2022-06-26  12:45:05</span>
+                 </div>
+                </div>
+                 <p class="text-success">+0.00</p>
+ 
+               </div>
+             </div>
+             <div class="operations_div2 op_none" id="minus_div">
+              <div class="operations_div d-flex justify-content-between align-items-start py-3">
+                <div class="d-flex">
+                 <img style="width: 40px; height: 40px;" src="./img/Vector (11).png"/>
+                 <div class="ps-2">
                    <h6>Balansınızdan 50 azn çıxıldı</h6>
                    <span>2022-06-26  12:45:05</span>
                  </div>
@@ -128,6 +148,42 @@
                  <p class="text-danger">-0.00</p>
  
                </div>
+               <div class="operations_div d-flex justify-content-between align-items-start py-3">
+                <div class="d-flex">
+                 <img style="width: 40px; height: 40px;" src="./img/Vector (11).png"/>
+                 <div class="ps-2">
+                   <h6>Balansınızdan 50 azn çıxıldı</h6>
+                   <span>2022-06-26  12:45:05</span>
+                 </div>
+                </div>
+                 <p class="text-danger">-0.00</p>
+ 
+               </div>
+               <div class="operations_div d-flex justify-content-between align-items-start py-3">
+                <div class="d-flex">
+                 <img style="width: 40px; height: 40px;" src="./img/Vector (11).png"/>
+                 <div class="ps-2">
+                   <h6>Balansınızdan 50 azn çıxıldı</h6>
+                   <span>2022-06-26  12:45:05</span>
+                 </div>
+                </div>
+                 <p class="text-danger">-0.00</p>
+ 
+               </div>
+               <div class="operations_div d-flex justify-content-between align-items-start py-3">
+                <div class="d-flex">
+                 <img style="width: 40px; height: 40px;" src="./img/Vector (11).png"/>
+                 <div class="ps-2">
+                   <h6>Balansınızdan 50 azn çıxıldı</h6>
+                   <span>2022-06-26  12:45:05</span>
+                 </div>
+                </div>
+                 <p class="text-danger">-0.00</p>
+ 
+               </div>
+             </div>
+             
+             </div>
 
             </div>
 
@@ -185,5 +241,23 @@
 
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let plus=document.getElementById('plus')
+      let minus=document.getElementById('minus')
+      let plus_div=document.getElementById('plus_div')
+      let minus_div=document.getElementById('minus_div')
+     
+      minus.addEventListener('click',()=>{
+        plus_div.classList.add('op_none')
+        minus_div.classList.add('op_block')
+          
+      })
+      plus.addEventListener('click',()=>{
+        plus_div.classList.remove('op_none')
+        minus_div.classList.remove('op_block')
+
+      })
+    
+    </script>
 </body>
 </html>
