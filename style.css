@@ -28,14 +28,6 @@
     height: 100%;
     object-fit: cover;
 }
-
-/* .loto_header nav{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid black;
-} */
 .loto_header_person{
   border-radius: 3px;
 }
@@ -43,10 +35,6 @@
     color: black;
     text-decoration: none;
 }
-/* .loto_header_person_img{
-    width: 20px;
-    height: 20px;
-} */
 .loto_header_price{
     position: relative;
     font-weight: 700;
@@ -91,15 +79,12 @@
 /* __________________Login______________________ */
 .home_page_bigdiv_login{
     height: calc(100vh - 100px);
-    /* height: 1000px; */
     background-image: url('./img/old-wooden-lotto-barrels-game-cards.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    /* padding: 0px 200px; */
-    /* align-items: center; */
 }
 .show{
     display: none;
@@ -154,8 +139,6 @@
 }
 /* ____________________REgister________________ */
 .home_page_bigdiv_register{
-    /* height: calc(100vh - 100px); */
-    /* height: 1000px; */
     background-image: url('./img/old-wooden-lotto-barrels-game-cards.png');
     background-position: center;
     background-size: cover;
@@ -163,12 +146,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 .home_page_div_register{
     width: 400px;
-    /* height: 400px; */
    padding: 16px 15px;
    background-color: #FFFAEF;
    border-radius: 10px;
@@ -278,8 +258,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 25px;
-    /* padding: 20px 50px; */
-
 }
 .traj_div{
     width: 46%;
@@ -386,13 +364,9 @@
     padding-left: 10px;
 }
 .person_account_choose button{
-    /* width: 100px;
-    max-width: 100%; */
-    /* padding: 10px; */
     width: 80px;
     border: 1px solid var(--loto);
     background-color: var(--loto);
-
 }
 .person_account_choose button a{
    color: white;
@@ -401,11 +375,8 @@
 }
 
 .person_account_choose input{
-    /* width: 300px;
-    max-width: 100%; */
     width: 300px;
     border: 1px solid var(--loto);
-
 }
 .person_account_price button{
     border: 1px solid var(--loto);
@@ -435,15 +406,6 @@
    color:black;
    text-decoration: none;
 }
-/* .person_account_price button::after{
-    content: "+";
-    clip-path: circle(56.8% at 86% 55%);
-    background-color: #764A34;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-} */
 /* ______________Balans___________ */
 .balans_home_page_bigdiv{
     background-image: url('./img/wooden-barrels-with-numbers-percentages-black-background\ 1.png');
@@ -477,21 +439,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* justify-content: flex-end; */
-    /* flex-direction: column; */
     width: 50%;
-    /* border: 2px solid white; */
 }
 .balans_price div {
     background-color: #FFFAEF;
     width: 55%;
-
 }
 .balans_write button{
     border:1px solid  white;
     background-color: var(--loto);
     border-radius: 3px;
-
 }
 .balans_write button a{
     color: white;
@@ -546,10 +503,7 @@
     width: 65%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    /* border: 6px solid #513425; */
     border-bottom: none;
-
-
 }
 .buyer_header button{
     border: 1px solid var(--loto);
@@ -568,9 +522,6 @@
     border: 2px solid white;
     box-sizing: border-box;
     width: 100%;
-    /* max-width: 100%; */
-    
-
 }
 .buyer_ticket1{
     border: 6px solid black;
@@ -715,8 +666,6 @@ body{
     background-color: rgba(193, 188, 188, 0.86) !important;
     border-radius: 100% !important;  
 }
-
-
 .carousel_number{
     padding: 90px 0px 30px 0px;
      font-weight: 700;
@@ -756,311 +705,18 @@ body{
 .goBack{
     background-color: #FFFAEF;
 }
-/* ________________MediaQuery___________________________ */
-
-@media only screen and (max-width: 415px){
-    .person_account_choose input{
-        width: 200px;
-    }
-    .traj_info,
-    .traj_success{
-        padding: 0px 5px;
-    }
-    .home_page_div_register{
-        width: 340px;
-    }
-    .register_back a{
-        padding-left: 30px;
-    }
-    .loto_header_price span{
-        font-size: 12px;
-    }
-    .loto_header_person span{
-        font-size: 12px;
-    }
-    .person_account_price button{
-        font-size: 10px;
-    }
-    .traj_time button {
-        font-size: 12px;
-    }
-  
-    
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 620px){
-    .home_page_bigdiv_login,
-    .person_account_bigdiv,
-    .recovery_bigdiv,
-.loto_home_page_bigdiv,
-.home_page_bigdiv_register,
-.balans_home_page_bigdiv
-    {
-       /* background-image: url('./img/Rectangle\ 19.png'); */
-       
-    }
-    .loto_carusel1{
-        height: 150px;
-    }
- 
-    .balans_home_page_buttons  button{
-        border: 1px solid white;
-        border-radius: 3px;
-        background-color: #FFFAEF;
-    }
-    .balans_home_page_buttons button a{
-        color: black;
-    }
-   
-    .show{
-        display: block;
-    }
-    .noShow{
-        display: none;
-    }
-    .loto_home_div{
-        padding: 20px 1px;
-    }
-     .loto_header{
-        padding: 0px 9px !important;
-     }
-     .loto_header_person{
-        border-radius: 20px;
-     }
-     .logo_image{
-        width: 160px;
-     }
-    .loto_home_page_bigdiv{
-        padding: 10px 5px;
-    }
-    .traj_end_price img{
-        width: 10px;
-        height: 10px;
-    }
-    .traj_success_price ul li{
-        width: 30px;
-        height: 30px;
-    }
-    .traj_price h6{
-        font-size: 12px;
-    }
-    .btn_app{
-        width: 630px !important;
-    }
-    .person_account_bigdiv{
-        padding: 0px 20px 100px 20px;
-
-    }
- 
-    .person_account_choose{
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        text-align: left;
-    }
-   
-    .refferal_big_div{
-        padding: 0px 10px;
-    }
-    .refferal_big_div_forms{
-        flex-direction: column;
-    }
-    .refferal_big_div_form1,
-    .refferal_big_div_form2{
-        width: 100%;
-    }
-    .balans_home_page_bigdiv{
-        padding: 0px 12px 100px 12px;
-
-    }
-    .balans_home_page_buttons {
-        width: 100%;
-    }
-    .balans_app{
-        flex-direction: column;
-    }
-    .balans_div{
-        width: 100%;
-    }
-    /* .balans_price{
-       flex-direction: row;
-       justify-content: space-between;
-       width: 100%;
-       padding: 20px 0px;
-    }
-    .balans_price div{
-      margin: 15px 0px;
-      border-radius: 5px;
-    } */
-    .buyer_header_app h4{
-        font-size: 17px;
-    }
-    .buyer_header_app h6{
-        font-size: 14px;
-    }
-    .buyer_header{
-        width: 70%;
-        /* border: 1px solid black; */
-    }
-    .buyer_header button{
-        width: 10%;
-        padding: 3px 0px;
-        font-size: 10px;
-        border-radius: 30px;
-    }
-    .buyer_header button img{
-    width: 14px;
-    height: 14px;
-    }
-    
-   
-    .game_div span{
-        width: 60px;
-        height: 60px;
-        font-size: 25px;
-        margin: 10px 4px;
-    }
-    .game_div span:nth-child(1){
-        width: 80px;
-        height: 80px;
-        font-size: 35px;
-    }
-  .win_app{
-    width:150px;
-    height:150px;
-    border-radius: 100%;
-    background-color: #E5BB2A;
-    display: flex;
-    justify-content: center;
-    padding: 22px;
-  }
-  .lost_padding{
-    padding: 0px 20px 0px 20px;
-}
-.buyer_play_bigdiv{
-    height: 108px !important;
-    border: 3px solid #513425 !important;
-}
-.buyer_play_div1{
-    height: 34px !important;
-    /* border: 3px solid #513425 !important; */
-
-}
-/* .buyer_play_div1 ul li{
-    height: 46px !important;
-    font-size: 20px !important;
-    border-radius: 4px !important;
-   
-} */
-.buyer_play_div1 .ul .li{
-    height: 34px !important;
-    font-size: 16px !important;
-    border-radius: 3px !important;
-   
-}
-.buyer_avto{
-    border-radius: 20px;
-}
-.home_page_div_login{
-    width: 350px;
-}
-
-   
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px){
-    .buyer_bigdiv{
-        padding: 0px 10px;
-    }
-    .buyer_btns h4,
-    .buyer_btn h4
-    {
-        font-size: 13px;
-    }
-    .buyer_header button{
-        width: 25%;
-        /* padding: 10px 0px; */
-    }
-   
-    .buyer_btns button,
-.buyer_btns span{
-    width: 25px;
-    height: 25px;
-    margin: 0px 3px;
-
-}
-.buyer_btn button{
-    width: 60px;
-    border-radius: 20px;
-}
-.buyer_btn span{
-    width: 60px;
-    border-radius: 20px;
-
-}
-.loto_home_page_bigdiv{
-    padding: 0px 20px 350px 20px;
-
-}
- /* .loto_home_page_bigdiv{
-        padding: 10px 5px;
-    } */
-
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 1100px){
-.traj_div{
-    width: 100%;
-}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px){
-
-}
-
 .buyer_play_bigdiv{
     width: 100%;
     height: 270px;
     border: 2px solid white;
-    /* margin-top: 20px; */
     background-color: white;
     border: 6px solid #513425;
-    /* border-top: none; */
     border-radius: 10px;
-
-
 }
 .buyer_play_div1{
     width: 100%;
     height: 86px;
-    /* border: 2px solid black; */
 }
-/* .buyer_play_div1 ul{
-    display: flex;
-    padding: 0px;
-
-}
-.buyer_play_div1 ul li{
-    width: 14%;
-    height: 86px;
-    border: 1.5px solid black;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 37px;
-    position: relative;
-} */
-/* .success{
-    position: relative;
-} */
 .success::after{
     content: "";
     position: absolute;
@@ -1071,7 +727,6 @@ body{
     height: 80%;
     border-radius: 100%;
     background-color: #B47B51;
-
 }
 .discuss::before{
     content: '\f00d';
@@ -1089,12 +744,10 @@ body{
     border-radius: 15px;
     border: 1px solid #FFFAEF;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 .buyer_play_div1 .ul{
     display: flex;
     padding: 0px;
-
 }
 .buyer_play_div1 .ul .li{
     width: 14%;
@@ -1157,4 +810,215 @@ body{
 }
 .op_block{
     display: block;
+}
+/* ________________MediaQuery___________________________ */
+
+@media only screen and (max-width: 415px){
+    .person_account_choose input{
+        width: 200px;
+    }
+    .traj_info,
+    .traj_success{
+        padding: 0px 5px;
+    }
+    .home_page_div_register{
+        width: 340px;
+    }
+    .register_back a{
+        padding-left: 30px;
+    }
+    .loto_header_price span{
+        font-size: 12px;
+    }
+    .loto_header_person span{
+        font-size: 12px;
+    }
+    .person_account_price button{
+        font-size: 10px;
+    }
+    .traj_time button {
+        font-size: 12px;
+    } 
+}
+@media only screen and (max-width: 620px){
+    .loto_carusel1{
+        height: 150px;
+    }
+ 
+    .balans_home_page_buttons  button{
+        border: 1px solid white;
+        border-radius: 3px;
+        background-color: #FFFAEF;
+    }
+    .balans_home_page_buttons button a{
+        color: black;
+    }
+   
+    .show{
+        display: block;
+    }
+    .noShow{
+        display: none;
+    }
+    .loto_home_div{
+        padding: 20px 1px;
+    }
+     .loto_header{
+        padding: 0px 9px !important;
+     }
+     .loto_header_person{
+        border-radius: 20px;
+     }
+     .logo_image{
+        width: 160px;
+     }
+    .loto_home_page_bigdiv{
+        padding: 10px 5px;
+    }
+    .traj_end_price img{
+        width: 10px;
+        height: 10px;
+    }
+    .traj_success_price ul li{
+        width: 30px;
+        height: 30px;
+    }
+    .traj_price h6{
+        font-size: 12px;
+    }
+    .btn_app{
+        width: 630px !important;
+    }
+    .person_account_bigdiv{
+        padding: 0px 20px 100px 20px;
+    }
+    .person_account_choose{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .refferal_big_div{
+        padding: 0px 10px;
+    }
+    .refferal_big_div_forms{
+        flex-direction: column;
+    }
+    .refferal_big_div_form1,
+    .refferal_big_div_form2{
+        width: 100%;
+    }
+    .balans_home_page_bigdiv{
+        padding: 0px 12px 100px 12px;
+
+    }
+    .balans_home_page_buttons {
+        width: 100%;
+    }
+    .balans_app{
+        flex-direction: column;
+    }
+    .balans_div{
+        width: 100%;
+    }
+    .buyer_header_app h4{
+        font-size: 17px;
+    }
+    .buyer_header_app h6{
+        font-size: 14px;
+    }
+    .buyer_header{
+        width: 70%;
+    }
+    .buyer_header button{
+        width: 10%;
+        padding: 3px 0px;
+        font-size: 10px;
+        border-radius: 30px;
+    }
+    .buyer_header button img{
+    width: 14px;
+    height: 14px;
+    }
+    .game_div span{
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        margin: 10px 4px;
+    }
+    .game_div span:nth-child(1){
+        width: 80px;
+        height: 80px;
+        font-size: 35px;
+    }
+  .win_app{
+    width:150px;
+    height:150px;
+    border-radius: 100%;
+    background-color: #E5BB2A;
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+  }
+  .lost_padding{
+    padding: 0px 20px 0px 20px;
+}
+.buyer_play_bigdiv{
+    height: 108px !important;
+    border: 3px solid #513425 !important;
+}
+.buyer_play_div1{
+    height: 34px !important;
+}
+.buyer_play_div1 .ul .li{
+    height: 34px !important;
+    font-size: 16px !important;
+    border-radius: 3px !important; 
+}
+.buyer_avto{
+    border-radius: 20px;
+}
+.home_page_div_login{
+    width: 350px;
+}
+}
+@media only screen and (max-width: 768px){
+    .buyer_bigdiv{
+        padding: 0px 10px;
+    }
+    .buyer_btns h4,
+    .buyer_btn h4
+    {
+        font-size: 13px;
+    }
+    .buyer_header button{
+        width: 25%;
+    }
+   
+    .buyer_btns button,
+.buyer_btns span{
+    width: 25px;
+    height: 25px;
+    margin: 0px 3px;
+
+}
+.buyer_btn button{
+    width: 60px;
+    border-radius: 20px;
+}
+.buyer_btn span{
+    width: 60px;
+    border-radius: 20px;
+
+}
+.loto_home_page_bigdiv{
+    padding: 0px 20px 350px 20px;
+
+}
+}
+@media only screen and (max-width: 1100px){
+.traj_div{
+    width: 100%;
+}
 }
